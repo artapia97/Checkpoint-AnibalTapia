@@ -1,0 +1,32 @@
+Para el ejercicio utilicé los siguientes comandos:
+echo "# Checkpoint-AnibalTapia" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/artapia97/fff.git
+git push -u origin main
+touch main.js index.html
+git add .
+git commit "se agregaron archivos index.html y main.js"
+git push
+git checkout -b "feature"
+mkdir Hardware Software SeguridadInformatica
+cd Hardware
+touch resumen.txt
+cd ..
+cd Software
+touch resumen.txt
+cd ..
+cd SeguridadInformatica
+touch resumen.txt
+cd ..
+git push -u origin feature
+git checkout main
+mv main.js resumenHardware.txt
+mv index.html resumenSoftware.txt
+nano resumenSoftware.txt
+nano resumenHardware.txt
+git add .
+git commit "Se realizaron cambios"
+git push -u origin main
